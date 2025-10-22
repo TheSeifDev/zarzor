@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function About() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen gap-x-8">
+    <section className="grid grid-cols-1 md:grid-cols-2 min-h-screen gap-x-8 px-4">
       {/* Left side - Image */}
-      <div className="relative w-full h-[400px] md:h-auto">
+      <div className="relative w-full h-[400px] md:h-auto ">
         <Image
           src="/images/about.jpg"
           alt="Photographer"
