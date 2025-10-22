@@ -3,7 +3,7 @@ import Hero from './Hero/Hero'
 import About from './About/About'
 import Work from './Work/Work'
 import Expreience from './Experience/Expreience'
-import Footer from './Work/Footer'
+import Footer from './Footer/Footer'
 
 const Home = () => {
   return (
