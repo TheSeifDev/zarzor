@@ -1,30 +1,31 @@
-import React from "react";
+import Link from 'next/link'
+import React from 'react'
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-[#f3f3f3] border-t border-gray-300 py-8 px-8 md:px-16 text-black">
-      <div className="flex flex-col md:flex-row items-center justify-between gap-4">
-        {/* Left side - Name or Logo */}
-        <h2 className="text-2xl font-serif tracking-wide">
-          Studio Rallia
-        </h2>
-
-        {/* Right side - Links or Copyright */}
-        <div className="text-sm text-gray-600 flex flex-col md:flex-row gap-2 md:gap-6 text-center md:text-right">
-          <a href="#" className="hover:text-black transition">
-            Instagram
-          </a>
-          <a href="#" className="hover:text-black transition">
-            LinkedIn
-          </a>
-          <a href="#" className="hover:text-black transition">
-            Behance
-          </a>
-          <p className="text-gray-500">© 2025 Studio Rallia. All rights reserved.</p>
+    <footer className='bg-black text-[#f5f5f5] h-[600px] w-full flex justify-between px-20 py-10'>
+      <section>
+        <div className=''>
+          <p>Ahmed Eid</p>
+          <h3 className='uppercase'>Get In Touch</h3>
         </div>
-      </div>
+        <div>
+          <div className=''>
+            <h4>Email:</h4>
+            <p>ahmedromu4@gmail.com</p>
+          </div>
+          <div className=''>
+            <h4>Studio:</h4>
+            <p></p>
+          </div>
+          <Link href="#" className='text-gray-300 underline font-bold uppercase hover:cursor-pointer'>Open for collabs</Link>
+        </div>
+      </section>
+      <section>
+        <image  />
+      </section>
     </footer>
-  );
-};
+  )
+}
 
-export default Footer;
+export default Footer

@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -36,9 +37,9 @@ const Hero = () => {
           <p className="">Ahmed Eid</p>
           <p className="">Photographer & App developer</p>
           </div>
-          <a href="#" className="text-gray-400 underline font-bold uppercase hover:cursor-pointer">
+          <Link href="#" className="text-gray-400 underline font-bold uppercase hover:cursor-pointer">
             Work with me
-          </a>
+          </Link>
         </div>
       </div>
     </section>
