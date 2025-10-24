@@ -2,9 +2,9 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 min-h-screen px-4 bg-[#f3f3f3] text-black mt-2">
+    <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 min-h-screen px-4 sm:px-6 md:px-8 text-black mt-2">
       {/* Left side - Image */}
-      <div className="relative w-full h-[400px] md:h-[600px]">
+      <div className="relative w-full h-[250px] sm:h-[350px] md:h-[600px]">
         <Image
           src="/images/feet.jpg"
           alt="Photographer"
@@ -15,25 +15,27 @@ export default function Experience() {
       </div>
 
       {/* Right side - Text */}
-      <div className="space-y-12">
+      <div className="space-y-12 text-center md:text-left px-4 sm:px-6 md:px-0 mt-8 md:mt-0">
         {/* Experience */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-serif tracking-wide mb-6 brown-sugar">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-wide mb-6 brown-sugar">
             EXPERIENCE
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-4 ml-0 sm:ml-12 md:ml-24">
             <div>
-              <h3 className="text-lg font-medium">
-                Nabd Masr –FlutterFlow Developer
+              <h3 className="text-base sm:text-lg font-medium">
+                Nabd Masr – FlutterFlow Developer
               </h3>
               <p className="text-gray-700 text-sm">
                 January 2024 – Present , Remote
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-medium">Wasla Tech - Team Leader</h3>
+              <h3 className="text-base sm:text-lg font-medium">
+                Wasla Tech - Team Leader
+              </h3>
               <p className="text-gray-700 text-sm">
-                Octobar 2025 – Present , Remote
+                October 2025 – Present , Remote
               </p>
             </div>
           </div>
@@ -41,12 +43,12 @@ export default function Experience() {
 
         {/* Education */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-serif tracking-wide mb-6 brown-sugar">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-wide mb-6 brown-sugar">
             EDUCATION
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-4 ml-0 sm:ml-12 md:ml-24">
             <div>
-              <h3 className="text-lg font-medium">
+              <h3 className="text-base sm:text-lg font-medium">
                 BATU - Faculty of Industrial and Energy Technology
               </h3>
               <p className="text-gray-700 text-sm">
@@ -54,9 +56,11 @@ export default function Experience() {
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-medium">Alexandria Advanced Military Technical School</h3>
+              <h3 className="text-base sm:text-lg font-medium">
+                Alexandria Advanced Military Technical School
+              </h3>
               <p className="text-gray-700 text-sm">
-                2022 - 2025 , Copmuter Technology
+                2022 - 2025 , Computer Technology
               </p>
             </div>
           </div>

@@ -39,7 +39,7 @@ const Work = () => {
               />
             </div>
             <p className="text-sm text-[#111] mt-4">
-              <span className="font-normal">2025 –</span> Alexandria Advanced Military Technical School
+              <span className="font-normal">2025 –</span> Alexandria Library
             </p>
           </div>
         </div>
