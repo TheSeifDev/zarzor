@@ -21,7 +21,7 @@ const brownSugar = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Brown Sugar + Montserrat",
+  title: "Ahmed Eid - Portfolio",
   description: "Montserrat as default, Brown Sugar optional",
 };
 

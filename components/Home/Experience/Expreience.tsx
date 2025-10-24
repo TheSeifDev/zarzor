@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Experience() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 min-h-screen px-4 bg-[#f3f3f3] text-black">
+    <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 min-h-screen px-4 bg-[#f3f3f3] text-black mt-2">
       {/* Left side - Image */}
       <div className="relative w-full h-[400px] md:h-[600px]">
         <Image
@@ -18,7 +18,7 @@ export default function Experience() {
       <div className="space-y-12">
         {/* Experience */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-serif tracking-wide mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif tracking-wide mb-6 brown-sugar">
             EXPERIENCE
           </h2>
           <div className="space-y-4">
@@ -41,7 +41,7 @@ export default function Experience() {
 
         {/* Education */}
         <div>
-          <h2 className="text-4xl md:text-5xl font-serif tracking-wide mb-6">
+          <h2 className="text-4xl md:text-5xl font-serif tracking-wide mb-6 brown-sugar">
             EDUCATION
           </h2>
           <div className="space-y-4">

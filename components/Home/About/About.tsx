@@ -6,7 +6,7 @@ export default function About() {
       {/* Left side - Image */}
       <div className="relative w-full h-[400px] md:h-auto ">
         <Image
-          src="/images/about.jpg"
+          src="/images/me.jpg"
           alt="Photographer"
           fill
           className="object-cover border"
@@ -16,7 +16,7 @@ export default function About() {
 
       {/* Right side - Text */}
       <div className="flex flex-col justify-start p-10">
-        <h2 className="text-5xl md:text-6xl font-light tracking-tight mb-16">
+        <h2 className="text-8xl font-light tracking-tight mb-16 brown-sugar">
           ABOUT <br /> <span className="font-thin">ME</span>
         </h2>
         <p className="text-gray-700 text-sm leading-relaxed max-w-md ml-56">

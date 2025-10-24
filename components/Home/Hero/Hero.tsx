@@ -28,14 +28,14 @@ const Hero = () => {
 
       {/* Right side - Text content */}
       <div className="flex flex-col justify-between p-8">
-        <h1 className="text-5xl font-bold leading-tight">
-          Discover the Beauty of Nature
+        <h1 className="text-8xl leading-tight brown-sugar">
+          Ahmed Eid<br /> portfolio
         </h1>
 
-        <div className="flex items-center justify-between text-sm">
+        <div className="flex items-center justify-between text-sm ">
           <div>
-          <p className="">Ahmed Eid</p>
-          <p className="">Photographer & App developer</p>
+          <p>Ahmed Eid</p>
+          <p>Photographer & App developer</p>
           </div>
           <Link href="#" className="text-gray-400 underline font-bold uppercase hover:cursor-pointer">
             Work with me
