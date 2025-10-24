@@ -1,10 +1,18 @@
+"use client";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 export default function Experience() {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 min-h-screen px-4 sm:px-6 md:px-8 text-black mt-2">
+    <section className="grid grid-cols-1 md:grid-cols-2 items-center gap-8 min-h-screen px-4 sm:px-6 md:px-8 text-black mt-2 overflow-hidden">
       {/* Left side - Image */}
-      <div className="relative w-full h-[250px] sm:h-[350px] md:h-[600px]">
+      <motion.div
+        initial={{ opacity: 0, x: -60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="relative w-full h-[250px] sm:h-[350px] md:h-[600px]"
+      >
         <Image
           src="/images/feet.jpg"
           alt="Photographer"
@@ -12,12 +20,23 @@ export default function Experience() {
           className="object-cover border"
           priority
         />
-      </div>
+      </motion.div>
 
       {/* Right side - Text */}
-      <div className="space-y-12 text-center md:text-left px-4 sm:px-6 md:px-0 mt-8 md:mt-0">
+      <motion.div
+        initial={{ opacity: 0, x: 60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.2 }}
+        viewport={{ once: true }}
+        className="space-y-12 text-center md:text-left px-4 sm:px-6 md:px-0 mt-8 md:mt-0"
+      >
         {/* Experience */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.3 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-wide mb-6 brown-sugar">
             EXPERIENCE
           </h2>
@@ -39,10 +58,15 @@ export default function Experience() {
               </p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Education */}
-        <div>
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
+        >
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-serif tracking-wide mb-6 brown-sugar">
             EDUCATION
           </h2>
@@ -64,8 +88,8 @@ export default function Experience() {
               </p>
             </div>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

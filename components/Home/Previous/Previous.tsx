@@ -1,23 +1,43 @@
-import Image from 'next/image'
-import React from 'react'
+"use client";
+import Image from "next/image";
+import React from "react";
+import { motion } from "framer-motion";
 
 const Previous = () => {
   return (
     <section
       id="work"
-      className="grid grid-cols-1 md:grid-cols-2 min-h-screen gap-x-8 px-4 sm:px-6"
+      className="grid grid-cols-1 md:grid-cols-2 min-h-screen gap-x-8 px-4 sm:px-6 overflow-hidden"
     >
-      {/* Left side - Text */}
-      <div className="flex flex-col justify-start p-6 sm:p-8 md:p-10 text-center md:text-left">
-        <div className="text-5xl sm:text-6xl md:text-8xl font-light tracking-tight mb-6 sm:mb-8 md:mb-10 brown-sugar">
+      {/* Left side - Text and Image */}
+      <motion.div
+        initial={{ opacity: 0, x: -60 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1 }}
+        viewport={{ once: true }}
+        className="flex flex-col justify-start p-6 sm:p-8 md:p-10 text-center md:text-left"
+      >
+        <motion.div
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.2 }}
+          viewport={{ once: true }}
+          className="text-5xl sm:text-6xl md:text-8xl font-light tracking-tight mb-6 sm:mb-8 md:mb-10 brown-sugar"
+        >
           <h3>
             Previous
             <br />
             Picturing
           </h3>
-        </div>
+        </motion.div>
 
-        <div className="relative w-full sm:w-[600px] md:w-[750px] h-[200px] sm:h-[250px] md:h-[300px] mx-auto md:mx-0">
+        <motion.div
+          initial={{ opacity: 0, y: 50 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="relative w-full sm:w-[600px] md:w-[750px] h-[200px] sm:h-[250px] md:h-[300px] mx-auto md:mx-0"
+        >
           <Image
             src="/images/landscape3.jpg"
             alt="Landscape 3"
@@ -27,25 +47,37 @@ const Previous = () => {
           <p className="absolute -bottom-8 sm:-bottom-10 text-xs sm:text-sm tracking-wide w-full text-center md:text-left">
             2025 – Alexandria Sea
           </p>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
 
-      {/* Right side - Image */}
-      <div className="flex items-center justify-center md:justify-end relative mt-12 md:mt-0">
-        <div className="relative w-[90%] sm:w-[80%] md:w-[75%] h-[250px] sm:h-[400px] md:h-[86%]">
+      {/* Right side - Main Image */}
+      <motion.div
+        initial={{ opacity: 0, x: 80 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 1, delay: 0.3 }}
+        viewport={{ once: true }}
+        className="flex items-center justify-center md:justify-end relative mt-12 md:mt-0"
+      >
+        <motion.div
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          transition={{ duration: 1, delay: 0.5 }}
+          viewport={{ once: true }}
+          className="relative w-[90%] sm:w-[80%] md:w-[75%] h-[250px] sm:h-[400px] md:h-[86%]"
+        >
           <Image
             src="/images/Sunset.jpg"
             alt="Sunset"
             fill
             className="object-cover"
           />
-        </div>
+        </motion.div>
         <p className="absolute -bottom-6 md:-bottom-0 left-1/2 md:left-40 transform -translate-x-1/2 md:translate-x-0 text-xs sm:text-sm tracking-wide">
           2025 – Sunset
         </p>
-      </div>
+      </motion.div>
     </section>
-  )
-}
+  );
+};
 
-export default Previous
+export default Previous;
