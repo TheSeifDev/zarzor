@@ -20,10 +20,10 @@ const Footer = () => {
 
           <div>
             <p className="text-lg mb-1 font-semibold">Location: </p>
-            <p className="text-gray-300">Egypt<br />Alexandria, ST 12345</p>
+            <p className="text-gray-300">Egypt<br />Alexandria, 45&apos;s Street</p>
           </div>
 
-          <Link href="#" className="uppercase text-sm font-semibold tracking-wide border-b border-white w-fit hover:text-gray-300">
+          <Link href="#work" className="uppercase text-sm font-semibold tracking-wide border-b border-white w-fit hover:text-gray-300">
             Open for Collabs
           </Link>
         </div>

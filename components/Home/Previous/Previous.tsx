@@ -2,7 +2,9 @@ import React from 'react'
 
 const Previous = () => {
   return (
-    <div>Previous</div>
+    <section id="work">
+      Previous
+    </section>
   )
 }
 

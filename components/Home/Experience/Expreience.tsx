@@ -6,7 +6,7 @@ export default function Experience() {
       {/* Left side - Image */}
       <div className="relative w-full h-[400px] md:h-[600px]">
         <Image
-          src="/images/about.jpg" // ضع صورتك داخل public/images/
+          src="/images/feet.jpg"
           alt="Photographer"
           fill
           className="object-cover border"
