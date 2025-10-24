@@ -24,16 +24,16 @@ export default function Experience() {
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-medium">
-                Associate Creative Director
+                Nabd Masr –FlutterFlow Developer
               </h3>
               <p className="text-gray-700 text-sm">
-                2021–present, Studio Rallia
+                January 2024 – Present , Remote
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-medium">Photographer</h3>
+              <h3 className="text-lg font-medium">Wasla Tech - Team Leader</h3>
               <p className="text-gray-700 text-sm">
-                2017–2021, Studio Rallia
+                Octobar 2025 – Present , Remote
               </p>
             </div>
           </div>
@@ -47,16 +47,16 @@ export default function Experience() {
           <div className="space-y-4">
             <div>
               <h3 className="text-lg font-medium">
-                MA in Professional Photography
+                BATU - Faculty of Industrial and Energy Technology
               </h3>
               <p className="text-gray-700 text-sm">
-                2025, Venston Bay Art Institute
+                2025 - present , Information Technology
               </p>
             </div>
             <div>
-              <h3 className="text-lg font-medium">BA in Advertising</h3>
+              <h3 className="text-lg font-medium">Alexandria Advanced Military Technical School</h3>
               <p className="text-gray-700 text-sm">
-                2017, University of Falworth
+                2022 - 2025 , Copmuter Technology
               </p>
             </div>
           </div>

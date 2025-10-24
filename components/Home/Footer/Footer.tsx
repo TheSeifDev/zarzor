@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const Footer = () => {
   return (
-    <footer className="grid grid-cols-1 md:grid-cols-2 min-h-[80vh] mt-10">
+    <footer id='contact' className="grid grid-cols-1 md:grid-cols-2 min-h-[80vh] mt-10">
       <section className="bg-black text-white flex flex-col justify-center px-10 py-16 space-y-6">
         <p>Ahmed Eid</p>
         <h2 className="text-6xl font-light leading-tight brown-sugar">

@@ -37,7 +37,7 @@ const Hero = () => {
           <p>Ahmed Eid</p>
           <p>Photographer & App developer</p>
           </div>
-          <Link href="#" className="text-gray-400 underline font-bold uppercase hover:cursor-pointer">
+          <Link href="#contact" className="text-gray-400 underline font-bold uppercase hover:cursor-pointer">
             Work with me
           </Link>
         </div>
