@@ -4,7 +4,7 @@ import React from "react";
 
 const Work = () => {
   return (
-    <section className="bg-[#f3f3f3] px-8 md:px-20 py-16">
+    <section className="min-h-screen px-8 md:px-20 py-16">
       <div className="max-w-[1200px] mx-auto grid grid-cols-12 gap-y-12 items-start">
 
         {/* Top-left image */}
